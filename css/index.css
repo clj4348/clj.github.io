@@ -1,0 +1,320 @@
+/* 轮播广告 */
+
+.banner {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner .img {
+	width: 300%;
+	font-size: 0;
+}
+
+.banner .img img {
+	display: block;
+	width: 100%;
+}
+
+.banner .img li a {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.banner .img li {
+	display: inline-block;
+	width: 33.3333%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	width: 30px;
+	height: 3px;
+	border-radius: 0;
+}
+
+@media (max-width:768px) {
+	.banner .btn_con {
+		display: none;
+	}
+	.swiper-pagination .swiper-pagination-bullet {
+		width: 24px;
+		height: 2px;
+	}
+}
+
+
+/*产品动态样式开始*/
+
+.h_big_box {
+	padding: 60px 0;
+	background: #f9f9f9;
+}
+
+.pro_container {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.product_tit {
+	font-size: 24px;
+	color: #333;
+}
+
+.product_en {
+	font-size: 16px;
+	color: #666;
+}
+
+.product_hr {
+	width: 80px;
+	height: 2px;
+	background: #0058ab;
+	margin:10px auto 0; 
+}
+
+.main_container {
+	margin: auto;
+	padding: 0 15px;
+}
+
+.row_container {
+	max-width: 1600px;
+	font-size: 0;
+	margin: auto;
+}
+
+.col_container {
+	display: inline-block;
+	width: 25%;
+	margin-top: 30px;
+}
+
+.col_container img {
+	width: 100%;
+}
+
+.col_margin {
+	padding: 0 10px;
+}
+.col_margin h4{
+	font-size: 18px;
+	font-weight: normal;
+	color: #333;
+}
+
+.col_margin a {
+	position: relative;
+	background: #fff;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	overflow: hidden;
+	top: 0;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+}
+
+.text-muted {
+	font-size: 14px;
+	color: #666;
+	display: block;
+	padding-bottom: 10px;
+}
+
+@media (min-width:769px) {
+	.col_margin a:hover {
+		top: -6px;
+		box-shadow: 1px 1px 20px rgba(3, 3, 3, 0.1);
+	}
+}
+
+@media (max-width:768px) {
+	.col_container {
+		width: 50%;
+	}
+	.h_big_box {
+		padding: 30px 0;
+	}
+}
+
+
+/*产品动态样式结束*/
+
+.b_big_box {
+	padding: 60px 0;
+	background: #fff;
+}
+
+.edu_big_container {
+	padding: 0 15px;
+	margin: auto;
+}
+
+.edu_big_container .pro_container {
+	margin: 0;
+}
+
+.edu_container {
+	max-width: 1600px;
+	margin: auto;
+}
+
+.edu_container li {
+	width: 33.3333%;
+	float: left;
+	height: 110px;
+	margin-top: 60px;
+}
+
+.pad_official {
+	padding: 0 15px;
+}
+
+.arice {
+	float: left;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #8ec5f2;
+	position: relative;
+}
+
+.sanjiao {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 16px solid #8ec5f2;
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.number {
+	color: #fff;
+	line-height: 60px;
+	height: 60px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.official_box {
+	float: right;
+	width: 84%;
+	margin-left: 10px;
+}
+
+.official_box a {
+	text-decoration: none;
+}
+
+.official_box .official_tit {
+	color: #333;
+	font-size: 18px;
+}
+
+.official_box .official_detial {
+	color: #666;
+	font-size: 14px;
+}
+
+@media (max-width: 1600px) {
+	.official_box {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.official_box {
+		width: 74%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.edu_container li {
+		width: 50%;
+	}
+	.official_box {
+		width: 78%;
+	}
+}
+
+@media (max-width: 768px) {
+	.edu_container li {
+		width: 100%;
+		height: 70px;
+	}
+	.b_big_box {
+		padding: 30px 0;
+	}
+	.official_box {
+		width: 84%;
+	}
+	.edu_container li:first-of-type {
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 500px) {
+	.official_box {
+		width: 74%;
+	}
+	.edu_container li {
+		height: 110px;
+		margin-top: 20px;
+	}
+	.official_box {
+		width: 74%;
+	}
+}
+
+@media (max-width: 360px) {
+	.official_box {
+		width: 70%;
+	}
+	.edu_container li {
+		height: 130px;
+	}
+}
+
+
+/*成功案例样式开始*/
+
+.successful_content {
+	max-width: 1600px;
+	margin: auto;
+	font-size: 0;
+}
+
+.successful_content li {
+	width: 33.3333%;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.successful_content li img {
+	margin: auto;
+	width: 90%;
+}
+
+
+/*成功案例样式结束*/
+
+@media (max-width:768px) {
+	.successful_content li {
+		width: 50%;
+	}
+}
+
+@media (max-width:500px) {
+	.successful_content li {
+		width: 100%;
+	}
+}
