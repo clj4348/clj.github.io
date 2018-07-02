@@ -1,0 +1,133 @@
+/*
+* @Author: clj
+* @Date:   2017-11-25 20:29:41
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-26 15:50:46
+*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑", "microsoft yahei";
+}
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+	outline: none;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+i{
+	list-style: none;
+}
+input {
+	outline: none;
+}
+
+textarea {
+	outline: none;
+	resize: none;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+.pr{
+	position: relative;
+}
+.clearfix{
+	zoom: 1;
+}
+
+.clearfix:after{
+	display: block;
+	content: " ";
+	clear: both;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.logo{
+	position: fixed;
+	left: 15px;
+	top: 10px;
+	z-index: 12;
+	width: 60px;
+}
+.logo img{
+	width: 100%;
+}
+.swiper-slide.menu {
+	min-width: 100px;
+	width: 70%;
+	max-width: 320px;
+	background: rgba(0,0,0, 1);
+	color: #fff;
+}
+.content {
+	width: 100%;
+}
+
+.menu-button {
+	position: fixed;
+	top: 0px; 
+	right: 0;
+	padding: 15px;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	transition: .3s;
+	z-index: 100;
+}
+.menu-button .bar:nth-of-type(1) {
+	margin-top: 0px;
+}
+.menu-button .bar:nth-of-type(3) {
+	margin-bottom: 0px;
+}
+
+.bar {
+	position: relative;
+	display: block;
+	width: 30px;
+	height: 2px;
+	margin: 8px auto;
+	background-color: #999;
+	border-radius: 10px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.cross .bar:nth-of-type(1) {
+	-webkit-transform: translateY(10px) rotate(-45deg);
+	-ms-transform: translateY(10px) rotate(-45deg);
+	transform: translateY(10px) rotate(-45deg);
+}
+.cross .bar:nth-of-type(2) {
+	opacity: 0;
+}
+.cross .bar:nth-of-type(3) {
+	-webkit-transform: translateY(-10px) rotate(45deg);
+	-ms-transform: translateY(-10px) rotate(45deg);
+	transform: translateY(-10px) rotate(45deg);
+}
