@@ -1,0 +1,59 @@
+/*
+* @Author: clj
+* @Date:   2017-11-28 21:06:28
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-28 21:24:47
+*/
+
+.f-l{
+	float: left;
+}
+
+.f-r{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.d-ib{
+	display: inline-block;
+}
+
+.d-b{
+	display: block;
+}
+
+.p-a{
+	position: absolute;
+}
+
+.p-r{
+	position: relative;
+}
+
+.ta-l{
+	text-align: left;
+}
+
+.ta-r{
+	text-align: right;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+.clearfix:after{
+	display: block;
+	content: " ";
+	clear: both;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.clear {
+	clear: both;
+}
