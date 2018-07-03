@@ -612,34 +612,19 @@ body {
   }
 }
 @media (max-width: 500px) {
-  .page6-list li a {
-    width: 100px;
-    height: 100px;
-  }
-  .page6-list li a p {
-    font-size: 24px;
-  }
-  .page6-list li a p span {
-    font-size: 12px;
-  }
-}
-@media (max-width: 375px) {
   .page6-list {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .page6-list li a {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
   .page6-list li a p {
-    font-size: 24px;
+    font-size: 20px;
   }
   .page6-list li a p span {
     font-size: 12px;
   }
-
-  .page6-desc {
-    padding: 0;
-  }
 }
+
 /* 第六屏样式结束 */

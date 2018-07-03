@@ -163,6 +163,15 @@ button {
   .slide-meun .slider-bar ul li:hover .line {
     width: 100%;
   }
+  
+}
+@media (max-width: 768px){
+  .slide-meun .slider-bar ul li{
+    margin-top: 10px;
+  }
+  .slide-meun {
+    padding-top: 60px;
+  }
 }
 .content {
   width: 100%;
