@@ -87,6 +87,17 @@ button {
 }
 
 /* 侧滑菜单开始 */
+.slide-meun-container{
+  position: fixed;
+  top:0;
+  height: 100%;
+  z-index: 9998;
+}
+.slide-meun-container .slide-meun{
+   position: fixed;
+   right: -100%;
+   z-index: 9999;
+}
 .slide-mask {
   position: fixed;
   top: 0;
@@ -278,7 +289,7 @@ button {
   line-height: 48px;
   text-align: center;
   font-size: 14px;
-  background: url(../../images/about/scroll-top.png) no-repeat center;
+  background: url(../images/about/scroll-top.png) no-repeat center;
   background-size: cover;
   cursor: pointer;
 }
