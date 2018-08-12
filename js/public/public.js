@@ -26,7 +26,7 @@ $(function(){
               </a>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href="works.html">
                 <h4 class="nav-en">WORKS</h4>
                 <div class="line"></div>
                 <h6 class="nav-cn">案例</h6>
@@ -51,7 +51,7 @@ $(function(){
     </div>
     <ul class="copy-ul clearfix">
       <li>
-        <a href="javascript:;">
+        <a href="works.html">
           <h4>精彩案例</h4>
           <span>WORK</span>
           <div class="hr">
@@ -60,9 +60,9 @@ $(function(){
         </a>
       </li>
       <li>
-        <a href="./blog.html">
-          <h4>个人博客</h4>
-          <span>BLOG</span>
+        <a href="https://github.com/clj4348">
+          <h4>开源项目</h4>
+          <span>github</span>
           <div class="hr">
             <span></span>
           </div>
