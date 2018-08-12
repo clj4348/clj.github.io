@@ -1,25 +1,32 @@
 body, html{
   width: 100%;
   height: 100%;
+	background: #fff;
   overflow: hidden;
 }
 .contact-container{
   position: relative;
   height: 100%;
   width: 100%;
-  background: url(../images/contact/contact-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
 .mask-white{
   position: absolute;
-  left: 0;
   width: 50%;
   height: 100%;
-  background: rgba(255,255,255, 0.2);
-  z-index: 2;
+  z-index: 10;
 }
-
+.left-door{
+	left: 0;
+	background: url(../images/contact/left-door.jpg) no-repeat right;
+	background-size: cover;
+}
+.right-door{
+	right: 0;
+	background: url(../images/contact/right-door.jpg) no-repeat left;
+	background-size: cover;
+}
 .contact-tit{
   position: absolute;
   width: 80%;
@@ -29,71 +36,213 @@ body, html{
   max-width: 350px;
   margin: auto;
   top: 80px;
-  z-index: 6;
+  z-index: 14;
 }
 
 .user-img-box{
   position: absolute;
   top: 55%;
   left: 0;
-  width: 140px;
-  height: 140px;
-  background: #fff;
-  border-radius: 50%;
+	width: 140px;
   right: 0;
+	z-index: 100;
   margin: auto;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.user-img{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background: #fff;
+	position: relative;
+	z-index: 14;
 }
 
 .user-img-box img{
   width: 100%;
 }
 
-.radius-line{
-  position: absolute;
-  top: 55%;
-  left: 0;
-  right: 0;
-  margin: auto;
+.bot-box{
+	width: 140px;
+	height: 140px;
+	border-radius:100%;
+	position: relative;
+}
+
+/* 波纹效果 start */
+.dot {
+  animation: sploosh 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.dot2 {
+  animation: sploosh2 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.dot3 {
+  animation: sploosh3 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.dot,
+.dot2,
+.dot3{
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
+  position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin:-70px auto 0; 
+  z-index: 10;
+  animation-iteration-count:infinite;
+	background: #fff;
+}
+@keyframes sploosh {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
+  }
+}
+@keyframes sploosh2 {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+@keyframes sploosh3 {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 1);
+  }
 }
 
-.radius-line-1{
-  width: 220px;
-  height: 220px;
-  border: 1px solid #ccc;
-}
-
-.radius-line-2{
-  width: 300px;
-  height: 300px;
-  border: 1px solid #888;
-}
-
-.radius-line-3{
-  width: 380px;
-  height: 380px;
-  border: 1px solid #555;
-}
+/* 波纹效果 end */
 
 @media (max-width: 500px){
   .user-img-box{
     width: 70px;
     height: 70px;
   }
-  .radius-line-1{
-    width: 120px;
-    height: 120px;
-  }
-  .radius-line-2{
-    width: 170px;
-    height: 170px;
-  }
-  .radius-line-3{
-    width: 220px;
-    height: 220px;
-  }
+	.bot-box,.user-img{
+		width: 70px;
+		height: 70px;
+	}
+	.dot,
+	.dot2,
+	.dot3{
+		width: 70px;
+		height: 70px;
+		margin:-35px auto 0;
+	}
 }
+
+ /* 联系方式 start */
+.container-content {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	display: none;
+	max-width: 300px;
+	margin: auto;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	z-index: 6;
+}
+
+.header-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.code-con{
+	width: 120px;
+	margin:20px auto 0;
+	text-align: center;
+}
+
+.code-con p{
+	margin-top: 10px;
+	font-size: 14px;
+	color: #212121;
+}
+
+.code-con img{
+	width: 100%;
+}
+.contact-me {
+	width: 200px;
+	font-size: 18px;
+	font-weight: 700;
+	display: block;
+	margin:10px auto 10px;
+	text-align: center;
+	padding-bottom:10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.header-img img{
+	width: 100%;
+}
+.contact-list{
+	text-align: center;
+}
+.contact-list a{
+	color: #212121;
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.github:hover{
+	color: #007AFF;
+}
+.close{
+	display: block;
+	color: #212121;
+	width: 80px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 6px;
+	margin:20px auto 0;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.close:hover{
+	color: #fff;
+	background: #007AFF;
+	border: 1px solid #007AFF;
+}
+ @media (max-width: 500px) {
+ 	.header-img{
+ 		width: 60px;
+ 		height: 60px;
+ 	}
+	.contact-list a{
+		font-size: 12px;
+	}
+	.code-con{
+		width: 80px;
+	}
+	.code-con p{
+		font-size: 12px;
+	}
+ }
+
+ /* 联系方式 end */
+ 
