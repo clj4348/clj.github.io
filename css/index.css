@@ -445,12 +445,12 @@ body {
 .round-wire li:nth-child(2) {
   height: 60px;
   width: 50%;
-  top: 44px;
+  top: 40px;
 }
 .round-wire li:nth-child(3) {
   height: 80px;
   width: 60%;
-  top: 38px;
+  top: 40px;
 }
 .round-wire li:nth-child(4) {
   height: 100px;
